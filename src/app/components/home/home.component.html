@@ -1,0 +1,17 @@
+<mat-card class="container-count" aria-label="Current Food Truck Count">Current Food Truck Count: {{foodTrucks.length}}</mat-card>
+
+<div class="container-card">
+  <mat-card class="card" *ngFor="let foodTruck of foodTrucks; trackBy: trackByKey" [attr.aria-label]="foodTruck.id">
+      <mat-card-header>
+        <mat-card-title style="color: brown;">ID: {{foodTruck.id}} </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h4 aria-label="Name"><strong>Name: </strong>{{foodTruck.ownerFirstName}} {{foodTruck.ownerLastName}}</h4>
+        <div aria-label="Brand Name">Brand Name: {{foodTruck.brandName}}</div>
+        <div aria-label="Email">Email: {{foodTruck.email}}</div>
+        <div aria-label="Address">Address: {{foodTruck.address}}</div>
+        <div aria-label="Web Site URL">Web Site URL: {{foodTruck.websiteUrl}}</div>
+        <div aria-label="Menu URL">Menu URL: {{foodTruck.menuUrl}}</div>
+      </mat-card-content>
+  </mat-card>
+</div>

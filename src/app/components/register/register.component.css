@@ -1,0 +1,32 @@
+form mat-form-field {
+    width: 75%;
+    font-size: 14px;
+}
+
+form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid brown;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+button {
+    margin: 0px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+      width: 75%;
+    }
+    form mat-form-field {
+        width: 90%;
+    }
+}

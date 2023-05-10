@@ -1,0 +1,28 @@
+<form (ngSubmit)="onSubmit()" #fTruckForm="ngForm" aria-label="Add food truck form">
+  <div style="font-size: 20px; font-weight: bold;">New Food Truck</div><br>
+  <mat-form-field>
+      <input type="text" title="First Name" matInput placeholder="First Name" required [(ngModel)]="fTruckDataForm.ownerFirstName" name="ownerFirstName" aria-required="true">
+  </mat-form-field>
+  <mat-form-field>
+      <input type="text" title="Last Name" matInput placeholder="Last Name" required [(ngModel)]="fTruckDataForm.ownerLastName" name="ownerLastName" aria-required="true">
+  </mat-form-field>
+  <mat-form-field>
+      <input type="text" title="Food Truck or Brand Name" matInput placeholder="Your Food Truck or Brand Name" required [(ngModel)]="fTruckDataForm.brandName" name="brandName" aria-required="true">
+  </mat-form-field>
+  <mat-form-field>
+      <input type="email" title="Email" matInput placeholder="account@domain.com" required [(ngModel)]="fTruckDataForm.email" name="email" aria-required="true">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" title="Address" matInput placeholder="Address" [(ngModel)]="fTruckDataForm.address" name="address" >
+  </mat-form-field>
+  <mat-form-field>
+    <input type="url" title="Website URL" matInput placeholder="Website URL" [(ngModel)]="fTruckDataForm.websiteUrl" name="websiteUrl">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="url" title="Menu URL" matInput placeholder="Menu Link" [(ngModel)]="fTruckDataForm.menuUrl" name="menuUrl">
+  </mat-form-field>
+  <div class="container-edit">
+      <button mat-button type="submit">Save</button>
+      <button mat-button (click)="cancelForm()">Cancel</button>
+  </div>
+</form>

@@ -1,0 +1,22 @@
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 350px;
+}
+
+.container-count {
+    width: 75%;
+    height: 5%;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}

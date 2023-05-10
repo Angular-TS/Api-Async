@@ -1,0 +1,14 @@
+<mat-toolbar class="container-toolbar" style="color: whitesmoke; background-color:brown" role="navigation">
+    <button mat-button aria-label="Food Truck Lovers">Food Truck Lovers</button>
+    <span style="flex: 1 auto;"></span>
+    <button class="bt" mat-button routerLink="/home" aria-label="Home" style="margin-right: 10px;">Home</button>
+    <button class="bt" mat-button routerLink="/owners/food-trucks/new" aria-label="Register Food Truck">Register Food Truck</button>
+</mat-toolbar>
+
+<button class="example-icon" mat-icon-button [matMenuTriggerFor]="menu" style="color: whitesmoke;">
+  <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/home" aria-label="Home" style="margin-right: 10px;">Home</button>
+  <button mat-menu-item routerLink="/owners/food-trucks/new" aria-label="Register Food Truck">Register Food Truck</button>
+</mat-menu>
